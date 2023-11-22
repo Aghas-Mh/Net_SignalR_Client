@@ -33,15 +33,17 @@ namespace C__SignalR_client.Controllers
         }
 
         [HttpGet("Connect")]
-        public async Task Connect(string name)
+        public async Task<ActionResult<string>> Connect(string name)
         {
             await _client.Connect(name);
+            return Ok(name);
         }
 
         [HttpGet("Send")]
-        public async Task Send(string message)
+        public async Task<string> Send(string message)
         {
             await _client.Send(message);
+            return message;
         }
     }
 }

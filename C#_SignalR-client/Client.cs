@@ -12,7 +12,7 @@ namespace C__SignalR_client
         public MyClient()
         {
             connection = new HubConnectionBuilder()
-            .WithUrl("https://10.10.10.18:7228/chatHub", (opts) =>
+            .WithUrl("https://192.168.5.149:7228/chatHub", (opts) =>
             {
                 opts.HttpMessageHandlerFactory = (message) =>
                 {
@@ -34,6 +34,7 @@ namespace C__SignalR_client
         public async Task Connect(string name)
         {
             _myName = name;
+
             connection.On<int>("ReciveID", (id) =>
             {
                 Console.WriteLine($"MyID: {id}");

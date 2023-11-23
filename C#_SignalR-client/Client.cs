@@ -12,7 +12,7 @@ namespace C__SignalR_client
         public MyClient()
         {
             connection = new HubConnectionBuilder()
-            .WithUrl("https://192.168.5.149:7228/chatHub", (opts) =>
+            .WithUrl("https://10.10.10.18:8088/chatHub", (opts) =>
             {
                 opts.HttpMessageHandlerFactory = (message) =>
                 {

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6URi0/bXpFVBsNoSPiz7Cbf4jGsqTT1PdoDoj5DUoI0=",
+  "Source": "C#_SignalR-client",
+  "BasePath": "_content/C#_SignalR-client",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
